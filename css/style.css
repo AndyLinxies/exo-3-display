@@ -9,29 +9,30 @@ header{
     justify-content: space-between;
 }
 #navi{
-    width: 350px;
+    flex-grow: 0.5; /*Determine une width automatique de maniere proportionelle aux autres flex-grow. On choisis nos valeurs*/
     background-color: orange;
     height: 700px;
     border-radius: 5px;
-    margin-top: 10px;
-    order: -1;
+    margin: 5px;/*Pour espacer sur tous les cotés*/
+    order: 1; /*Determiner l'ordre des items*/
 }
 #cont{
-    width: 700px;
+    flex-grow: 2;
     background-color: rgba(0, 132, 255, 0.849);
-    margin-top: 10px;
+    margin: 5px;
     border-radius: 5px;
+    order: 2;
 }
 #side{
-    width: 350px;
+    flex-grow: 0.5;
     background-color: orange;
-    margin-top: 10px;
+    margin: 5px;
     border-radius: 5px;
-    order: 1;
+    order: 3;
 }
 footer{
     height: 80px;
     background-color: blue;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 5px;
 }
